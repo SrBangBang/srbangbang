@@ -3,11 +3,16 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Test</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Soy Tu Salud">
 </head>
-<body style="background: WHITE;"> 
+<body style="background: WHITE;">
+<add-to-home-screen></add-to-home-screen>
+<script type="module" src="AddToHomeScreen.js"></script>
 <?php
     require('archivos/conexion.php');
     session_start();
@@ -84,7 +89,5 @@
 <?php
     }
 ?>
-
-
 </body>
 </html>
